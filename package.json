@@ -1,0 +1,27 @@
+{
+  "name": "basic_readme",
+  "version": "0.0.1",
+  "description": "saves you the effort of writing the first line of your readme.markdown.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.config.js test/*.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshWyatt/basic_readme.git"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "joshWyatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshWyatt/basic_readme/issues"
+  },
+  "homepage": "https://github.com/joshWyatt/basic_readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "pre-commit": "^1.0.6",
+    "tape": "^4.0.0"
+  }
+}
