@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test.config.js test/*.js | faucet"
   },
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/joshWyatt/basic_readme.git"
