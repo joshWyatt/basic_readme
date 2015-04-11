@@ -10,7 +10,7 @@ function runBasicReadme(cb) {
 
   var options = {
     moduleName: 'test_module',
-    description: 'This is just a test module for running tests with',
+    description: 'mock description text',
     filePath: __dirname
   };
 
@@ -20,11 +20,16 @@ function runBasicReadme(cb) {
 
 function testBasicReadme(cb) {
   test('lib/basic_readme.js', function(t){
-    t.plan(2);
+    var pathToREADME = __dirname + '/README.md';
+    t.plan(3);
+
+    var README = fs.readFileSync(pathToREADME);
+    var moduleNamePattern = /#test_module/;
 
     t.pass('it should start without errors');
-    t.ok(fileExists(__dirname + '/README.md'), 'it should create a README.md');
-    
+    t.ok(fileExists(pathToREADME), 'it should create a README.md');
+    t.ok(moduleNamePattern.test(README));
+
     cb();
   });
 }
