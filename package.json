@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "saves you the effort of writing the first line of your readme.markdown.",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "node test.config.js test/*.js | faucet"
   },
@@ -16,8 +17,11 @@
   "keywords": [
     "readme"
   ],
-  "author": "joshWyatt",
-  "license": "ISC",
+  "author": {
+    "name": "Josh Wyatt",
+    "url": "http://joshwyatt.io"
+  }, 
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/joshWyatt/basic_readme/issues"
   },

@@ -28,7 +28,7 @@ function testBasicReadme(cb) {
 
     t.pass('it should start without errors');
     t.ok(fileExists(pathToREADME), 'it should create a README.md');
-    t.ok(moduleNamePattern.test(README));
+    t.ok(moduleNamePattern.test(README), 'it should write the module name as an H1');
 
     cb();
   });
