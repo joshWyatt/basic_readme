@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var basicReadme = require('./lib/basic_readme.js');
 var argv = require('minimist')(process.argv.slice(2), {
   alias: {
     d: 'description',
@@ -13,9 +14,9 @@ var argv = require('minimist')(process.argv.slice(2), {
 var argvHasProblems = require('./lib/argv_has_problems.js');
 var printUsageAndExit = require('print_usage');
 
-if (argvHasProblems(argv)) printUsageAndExit('use it right');
+// see usage.md for Usage prompt
+if (argvHasProblems(argv)) printUsageAndExit();
 
-var basicReadme = require('./lib/basic_readme.js');
 
 var options = {};
 options.moduleName = process.argv[2];
