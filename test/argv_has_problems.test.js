@@ -1,7 +1,7 @@
 var test = require('tape');
 var argvHasProblems = require('../lib/argv_has_problems.js');
 
-test('argv_has_problems.js', function(t){
+test('lib/argv_has_problems.js', function(t){
   t.plan(5);
 
   // see `index.js` and `minimist` docs for more details on how arguments

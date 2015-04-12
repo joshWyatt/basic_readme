@@ -1,7 +1,7 @@
 {
   "name": "basic_readme",
   "version": "0.0.1",
-  "description": "saves you the effort of writing the first line of your readme.markdown.",
+  "description": "Create a README.md for your module with template headers of your choosing.",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": {
     "name": "Josh Wyatt",
     "url": "http://joshwyatt.io"
-  }, 
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joshWyatt/basic_readme/issues"
@@ -32,5 +32,8 @@
     "file-exists": "^0.1.1",
     "pre-commit": "^1.0.6",
     "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "print_usage": "^1.0.1"
   }
 }

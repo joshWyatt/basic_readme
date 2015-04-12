@@ -11,13 +11,9 @@ var argv = require('minimist')(process.argv.slice(2), {
 });
 
 var argvHasProblems = require('./lib/argv_has_problems.js');
+var printUsageAndExit = require('print_usage');
 
-console.log(argv._.length);
-if (argvHasProblems(argv)) {
-  console.log('print usage here when I have wifi');
-} else {
-  console.log('argv does not have problems');
-}
+if (argvHasProblems(argv)) printUsageAndExit('use it right');
 
 var basicReadme = require('./lib/basic_readme.js');
 
