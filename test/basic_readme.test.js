@@ -24,7 +24,7 @@ function runBasicReadme(cb) {
 
 function testBasicReadme(cb) {
   test('lib/basic_readme.js', function(t){
-    var pathToReadme = __dirname + '/README_TEST.md';
+    var pathToReadme = __dirname + '/README.md';
     t.plan(5);
 
     var readme = fs.readFileSync(pathToReadme);
@@ -45,5 +45,5 @@ function testBasicReadme(cb) {
 function cleanUp(err) {
   if (err) throw err;
 
-  fs.unlinkSync(__dirname + '/README_TEST.md');
+  fs.unlinkSync(__dirname + '/README.md');
 }
