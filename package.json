@@ -34,6 +34,7 @@
     "tape": "^4.0.0"
   },
   "dependencies": {
-    "print_usage": "^1.0.1"
+    "minimist": "^1.1.1",
+    "print_usage": "^1.0.4"
   }
 }
