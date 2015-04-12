@@ -33,13 +33,13 @@ will create a new README.md with the following:
 
 #Usage
 
-Usage: basic_readme repo_name [options]
+`basic_readme repo_name [options]`
 
-  -d                Add a description header
-  -m                Add a methods header
-  -e                Add a example header
-  -i                Add a install header
-  -l                Add a license header
+  '-d' Add a description header
+  '-m' Add a methods header
+  '-e' Add a example header
+  '-i' Add a install header
+  '-l' Add a license header
 
 #License
 
