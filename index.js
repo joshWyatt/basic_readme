@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+//this is good
 
 var basicReadme = require('./lib/basic_readme.js');
 var argv = require('minimist')(process.argv.slice(2), {
